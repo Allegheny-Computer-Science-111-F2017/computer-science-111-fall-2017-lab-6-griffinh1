@@ -21,7 +21,9 @@ public class ManipulateDna {
       System.out.println("Unable to locate file");
     }
     // Step One: Read in and display the chosen DNA string
-
+    String dna = scanner.nextLine();
+    System.out.println("Okay, I am going to manipulate the DNA string " + dna);
+    System.out.println("Enter a string containing only C, G, T, and A: " + dna);
     // Step Two: Compute the complement of the DNA String
 
     // Step Three: Insert a randomly chosen DNA letter into the DNA String
