@@ -9,7 +9,7 @@ public class ManipulateDna {
 
   public static void main(String[] args) {
     // display the name of the programmer and the date
-    System.out.println("Gregory M. Kapfhammer " + new Date());
+    System.out.println("Haeley M. Griffin " + new Date());
     // declare the starting file and scanner
     File dnaInputsFile = null;
     Scanner scanner = null;
@@ -25,7 +25,11 @@ public class ManipulateDna {
     System.out.println("Okay, I am going to manipulate the DNA string " + dna);
     System.out.println("Enter a string containing only C, G, T, and A: " + dna);
     // Step Two: Compute the complement of the DNA String
-
+    dna.replace('a','T');
+    dna.replace('t','A');
+    dna.replace('c','G');
+    dna.replace('g','C');
+    System.out.println("Complement of " + dna + " is " + );
     // Step Three: Insert a randomly chosen DNA letter into the DNA String
 
     // Step Four: Delete a DNA letter from a randomly chosen position in the DNA string
@@ -33,6 +37,8 @@ public class ManipulateDna {
     // Step Five: Change a random position in the DNA String to a randomly chosen DNA letter
 
     // Step Six: Display a final thankyou message
+    System.out.println("Thanks for using the Manipulate Dna program.");
+    System.out.println("Have an awesome day.");
 
   }
 
