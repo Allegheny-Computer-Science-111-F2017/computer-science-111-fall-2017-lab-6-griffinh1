@@ -46,22 +46,22 @@ public class ManipulateDna {
     Random generator = new Random();
     int v1 = generator.nextInt(4);
     String ranChar = dna.substring(v1, v1 + 1);
-    int ranPos = generator.nextInt(5);
+    int ranPos = generator.nextInt(dna.length());
     String dna2 = dna.substring(0,ranPos) + ranChar + dna.substring(ranPos);
     System.out.println("Inserting " + ranChar + " at position " + ranPos + " gives " + dna2);
 
     // Step Four: Delete a DNA letter from a randomly chosen position in the DNA string
-    int ranPos2 = generator.nextInt(5);
+    int ranPos2 = generator.nextInt(dna.length());
     String dna3 = dna.substring(0,ranPos2) + dna.substring(ranPos2 + 1);
     System.out.println("Deleting from position " + ranPos2 + " gives " + dna3);
 
     // Step Five: Change a random position in the DNA String to a randomly chosen DNA letter
     int v2 = generator.nextInt(4);
     String ranChar2 = dna.substring(v1, v1 + 1);
-    int ranPos3 = generator.nextInt(5);
+    int ranPos3 = generator.nextInt(dna.length());
     String dna4 = dna.substring(0,ranPos3) + ranChar2 + dna.substring(ranPos3 + 1);
     System.out.println("Changing position " + ranPos3 + " gives " + dna4);
-    
+
     // Step Six: Display a final thankyou message
     System.out.println("Thanks for using the Manipulate Dna program.");
     System.out.println("Have an awesome day.");

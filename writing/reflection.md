@@ -1,4 +1,3 @@
-# Reflection by
+# Reflection by Haeley Griffin
 
-This lab required me to write a file called `ManipulateDNA`. Please review the
-Laboratory Assignment Sheet and add the required details to this paragraph.
+This lab required me to write a file called `ManipulateDNA`. In this lab we had to use our skills we have learned thus far in the year to printout an manipulate DNA string that was given to us from an outside document. To use this document we had to use a scanner to pull the information from the document in. We then had to read in and display the chosen DNA which I created a string that  was all the information in the outside document. Next we had to create the complement to the DNA string. This was more challenging because you did not want to completely just switch them because then you would be changing letters that had already  been changed so I decided to create strings that would change one thing at a time replacing the letters with their complement using Uppercase and Lowercase to distinguish between the ones that had been changed and the ones that needed changed, then printed that out using a println statement. The next step was to insert a randomly chosen DNA letter into the DNA string. This was the hardest step for me but I solved this by 
