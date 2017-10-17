@@ -3,8 +3,12 @@ package labsix;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Date;
-import java.util.random;
+import java.util.Random;
 import java.util.Scanner;
+
+/**
+ *This program pulls in a dna sting from an already existing file and minipulates it.
+ */
 
 public class ManipulateDna {
 
@@ -39,12 +43,25 @@ public class ManipulateDna {
     s5 = s5.toUpperCase();
     System.out.println("Complement of " + dna + " is " + s5);
     // Step Three: Insert a randomly chosen DNA letter into the DNA String
-    
-    //new = dna.substring(0,randomeInsertionIndex) + randomChar + dna.substring(randomeInsertionIndex);
+    Random generator = new Random();
+    int v1 = generator.nextInt(4);
+    String ranChar = dna.substring(v1, v1 + 1);
+    int ranPos = generator.nextInt(5);
+    String dna2 = dna.substring(0,ranPos) + ranChar + dna.substring(ranPos);
+    System.out.println("Inserting " + ranChar + " at position " + ranPos + " gives " + dna2);
+
     // Step Four: Delete a DNA letter from a randomly chosen position in the DNA string
+    int ranPos2 = generator.nextInt(5);
+    String dna3 = dna.substring(0,ranPos2) + dna.substring(ranPos2 + 1);
+    System.out.println("Deleting from position " + ranPos2 + " gives " + dna3);
 
     // Step Five: Change a random position in the DNA String to a randomly chosen DNA letter
-
+    int v2 = generator.nextInt(4);
+    String ranChar2 = dna.substring(v1, v1 + 1);
+    int ranPos3 = generator.nextInt(5);
+    String dna4 = dna.substring(0,ranPos3) + ranChar2 + dna.substring(ranPos3 + 1);
+    System.out.println("Changing position " + ranPos3 + " gives " + dna4);
+    
     // Step Six: Display a final thankyou message
     System.out.println("Thanks for using the Manipulate Dna program.");
     System.out.println("Have an awesome day.");
